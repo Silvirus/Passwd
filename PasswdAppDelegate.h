@@ -7,11 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class MyWindowController;
 
 @interface PasswdAppDelegate : NSObject <NSApplicationDelegate> {
-    NSWindow *window;
+	MyWindowController *windowController;
 }
-
-@property (assign) IBOutlet NSWindow *window;
 
 @end

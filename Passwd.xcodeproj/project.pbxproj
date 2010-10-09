@@ -10,6 +10,12 @@
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* PasswdAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* PasswdAppDelegate.m */; };
 		38F7124912606FEB0075CE72 /* PasswordEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F7124812606FEB0075CE72 /* PasswordEntry.m */; };
+		38F71265126083E40075CE72 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F71264126083E40075CE72 /* LoginController.m */; };
+		38F71267126084000075CE72 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F71266126084000075CE72 /* LoginView.xib */; };
+		38F712B11260907B0075CE72 /* PasswdWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F712B01260907B0075CE72 /* PasswdWindow.xib */; };
+		38F712B5126090960075CE72 /* MyWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F712B4126090960075CE72 /* MyWindowController.m */; };
+		38F713B01260E10D0075CE72 /* PasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F713AF1260E10D0075CE72 /* PasswordController.m */; };
+		38F713FD1260ECD70075CE72 /* PasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F713FC1260ECD70075CE72 /* PasswordView.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -28,6 +34,15 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		38F7124712606FEB0075CE72 /* PasswordEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordEntry.h; sourceTree = "<group>"; };
 		38F7124812606FEB0075CE72 /* PasswordEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordEntry.m; sourceTree = "<group>"; };
+		38F71263126083E40075CE72 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		38F71264126083E40075CE72 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		38F71266126084000075CE72 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		38F712B01260907B0075CE72 /* PasswdWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswdWindow.xib; sourceTree = "<group>"; };
+		38F712B3126090960075CE72 /* MyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWindowController.h; sourceTree = "<group>"; };
+		38F712B4126090960075CE72 /* MyWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWindowController.m; sourceTree = "<group>"; };
+		38F713AE1260E10D0075CE72 /* PasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordController.h; sourceTree = "<group>"; };
+		38F713AF1260E10D0075CE72 /* PasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordController.m; sourceTree = "<group>"; };
+		38F713FC1260ECD70075CE72 /* PasswordView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordView.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Passwd-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Passwd-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Passwd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passwd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -47,6 +62,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				38F7125212607CDB0075CE72 /* Controllers */,
 				38F7124612606FDF0075CE72 /* Models */,
 				256AC3D80F4B6AC300CF3369 /* PasswdAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* PasswdAppDelegate.m */,
@@ -107,6 +123,9 @@
 				8D1107310486CEB800E47090 /* Passwd-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				38F71266126084000075CE72 /* LoginView.xib */,
+				38F712B01260907B0075CE72 /* PasswdWindow.xib */,
+				38F713FC1260ECD70075CE72 /* PasswordView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -127,6 +146,19 @@
 				38F7124812606FEB0075CE72 /* PasswordEntry.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		38F7125212607CDB0075CE72 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38F71263126083E40075CE72 /* LoginController.h */,
+				38F71264126083E40075CE72 /* LoginController.m */,
+				38F712B3126090960075CE72 /* MyWindowController.h */,
+				38F712B4126090960075CE72 /* MyWindowController.m */,
+				38F713AE1260E10D0075CE72 /* PasswordController.h */,
+				38F713AF1260E10D0075CE72 /* PasswordController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +213,9 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				38F71267126084000075CE72 /* LoginView.xib in Resources */,
+				38F712B11260907B0075CE72 /* PasswdWindow.xib in Resources */,
+				38F713FD1260ECD70075CE72 /* PasswordView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +229,9 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* PasswdAppDelegate.m in Sources */,
 				38F7124912606FEB0075CE72 /* PasswordEntry.m in Sources */,
+				38F71265126083E40075CE72 /* LoginController.m in Sources */,
+				38F712B5126090960075CE72 /* MyWindowController.m in Sources */,
+				38F713B01260E10D0075CE72 /* PasswordController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

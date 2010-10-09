@@ -7,13 +7,13 @@
 //
 
 #import "PasswdAppDelegate.h"
+#import "MyWindowController.h"
 
 @implementation PasswdAppDelegate
 
-@synthesize window;
-
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	// Insert code here to initialize your application 
+	windowController = [[MyWindowController alloc] init];
+	[windowController showWindow:self];
 }
 
 @end

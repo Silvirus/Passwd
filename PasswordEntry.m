@@ -36,7 +36,7 @@
 
 - (id) init
 {
-	return [self initWithTitle:@"Untitled" loginUrl:nil username:@"JohnDoe" password:@"test12345"];
+	return [self initWithTitle:@"Untitled" loginUrl:[NSURL URLWithString:@"http://www.example.org"] username:@"JohnDoe" password:@"test12345"];
 }
 
 

@@ -17,10 +17,10 @@
 	NSString *note;
 }
 
-@property(copy) NSString *title;
+@property(retain) NSString *title;
 @property(retain) NSURL *loginUrl;
-@property(copy) NSString *username;
-@property(copy) NSString *password;
-@property(copy) NSString *note;
+@property(retain) NSString *username;
+@property(retain) NSString *password;
+@property(retain) NSString *note;
 
 @end
